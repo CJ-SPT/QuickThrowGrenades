@@ -41,26 +41,8 @@
 		<Reference Include="Unity.TextMeshPro">
 			<HintPath>$(SolutionDir)deps\Unity.TextMeshPro.dll</HintPath>
 		</Reference>
-		<Reference Include="aki-core">
-			<HintPath>$(SolutionDir)deps\aki-core.dll</HintPath>
-		</Reference>
-		<Reference Include="aki-singleplayer">
-			<HintPath>$(SolutionDir)deps\aki-singleplayer.dll</HintPath>
-		</Reference>
-		<Reference Include="aki-debugging">
-			<HintPath>$(SolutionDir)deps\aki-debugging.dll</HintPath>
-		</Reference>
-		<Reference Include="aki-custom">
-			<HintPath>$(SolutionDir)deps\aki-custom.dll</HintPath>
-		</Reference>
-		<Reference Include="aki.Common">
-			<HintPath>$(SolutionDir)deps\aki.Common.dll</HintPath>
-		</Reference>
-		<Reference Include="Aki.reflection">
-			<HintPath>$(SolutionDir)deps\Aki.Reflection.dll</HintPath>
-		</Reference>
-		<Reference Include="aki.Build">
-			<HintPath>$(SolutionDir)deps\aki.Build.dll</HintPath>
+		<Reference Include="SPT.reflection">
+			<HintPath>$(SolutionDir)deps\SPT-Reflection.dll</HintPath>
 		</Reference>
 		<Reference Include="Sirenix.Serialization">
 			<HintPath>$(SolutionDir)deps\Sirenix.Serialization.dll</HintPath>
@@ -83,10 +65,10 @@
 		<Reference Include="ItemTemplate.Types">
 			<HintPath>$(SolutionDir)deps\ItemTemplate.Types.dll</HintPath>
 		</Reference>
-		<Reference Include="ItemTemplate.Types">
+		<Reference Include="UnityEngine.IMGUIModule">
 			<HintPath>$(SolutionDir)deps\UnityEngine.IMGUIModule.dll</HintPath>
 		</Reference>
-		<Reference Include="ItemTemplate.Types">
+		<Reference Include="UnityEngine.TextRenderingModule">
 			<HintPath>$(SolutionDir)deps\UnityEngine.TextRenderingModule.dll</HintPath>
 		</Reference>
 	</ItemGroup>
@@ -98,7 +80,7 @@
   </ItemGroup>
 
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
-		<Exec Command="copy &quot;$(TargetPath)&quot; &quot;G:\3.8.0 - Dev\BepInEx\plugins\$(TargetName).dll&quot;&#xD;&#xA;if $(ConfigurationName) == Debug (&#xD;&#xA;    copy &quot;$(ProjectDir)$(OutDir)$(TargetName).pdb&quot; &quot;G:\3.8.0 - Dev\BepInEx\plugins\$(TargetName).pdb&quot;&#xD;&#xA;) else (&#xD;&#xA;    del &quot;G:\3.8.0 - Dev\BepInEx\plugins\$(TargetName).pdb&quot;&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;del &quot;G:\3.8.0 - Dev\BepInEx\config\com.dirtbikercj.QuickThrowGrenades.cfg&quot;" />
+		<Exec Command="copy &quot;$(TargetPath)&quot; &quot;G:\3.9.0 - Dev\BepInEx\plugins\$(TargetName).dll&quot;&#xD;&#xA;if $(ConfigurationName) == Debug (&#xD;&#xA;    copy &quot;$(ProjectDir)$(OutDir)$(TargetName).pdb&quot; &quot;G:\3.9.0 - Dev\BepInEx\plugins\$(TargetName).pdb&quot;&#xD;&#xA;) else (&#xD;&#xA;    del &quot;G:\3.9.0 - Dev\BepInEx\plugins\$(TargetName).pdb&quot;&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;del &quot;G:\3.9.0 - Dev\BepInEx\config\com.dirtbikercj.QuickThrowGrenades.cfg&quot;" />
 	</Target>
 
 </Project>

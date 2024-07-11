@@ -10,10 +10,10 @@ using static DrakiaXYZ.VersionChecker.VersionChecker;
 
 namespace QuickThrowGrenades
 {
-    [BepInPlugin("com.dirtbikercj.QuickThrowGrenades", "Quick Throw Grenades", "1.0.2")]
+    [BepInPlugin("com.dirtbikercj.QuickThrowGrenades", "Quick Throw Grenades", "1.0.3")]
     internal class Plugin : BaseUnityPlugin
     {
-        public const int TarkovVersion = 29197;
+        public const int TarkovVersion = 30626;
 
         internal static ConfigEntry<bool> Enable;
         internal static ConfigEntry<bool> EnableKeybind;
@@ -31,7 +31,7 @@ namespace QuickThrowGrenades
             Enable = Config.Bind(
                "General",
                "Quick Throw Grenades",
-               false,
+               true,
                new ConfigDescription("Enable plugin", null, new ConfigurationManagerAttributes { Order = 3 }));
 
             EnableKeybind = Config.Bind(

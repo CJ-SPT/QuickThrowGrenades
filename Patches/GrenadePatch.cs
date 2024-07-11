@@ -1,7 +1,8 @@
-﻿using Aki.Reflection.Patching;
-using EFT;
+﻿using EFT;
 using System.Linq;
 using System.Reflection;
+using EFT.UI;
+using SPT.Reflection.Patching;
 
 namespace QuickThrowGrenades.Patches
 {
