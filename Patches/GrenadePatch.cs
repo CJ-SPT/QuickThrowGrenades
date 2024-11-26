@@ -15,7 +15,7 @@ namespace QuickThrowGrenades.Patches
         }
 
         [PatchPrefix]
-        private static bool Prefix(Player __instance, GrenadeClass throwWeap)
+        private static bool Prefix(Player __instance, ThrowWeapItemClass throwWeap)
         {
 
 #if DEBUG
