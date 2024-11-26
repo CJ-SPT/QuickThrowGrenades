@@ -10,10 +10,10 @@ using static DrakiaXYZ.VersionChecker.VersionChecker;
 
 namespace QuickThrowGrenades
 {
-    [BepInPlugin("com.dirtbikercj.QuickThrowGrenades", "Quick Throw Grenades", "1.0.3")]
+    [BepInPlugin("com.dirtbikercj.QuickThrowGrenades", "Quick Throw Grenades", "1.0.4")]
     internal class Plugin : BaseUnityPlugin
     {
-        public const int TarkovVersion = 30626;
+        public const int TarkovVersion = 33420;
 
         internal static ConfigEntry<bool> Enable;
         internal static ConfigEntry<bool> EnableKeybind;
